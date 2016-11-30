@@ -1,0 +1,30 @@
+= Hawtio Docker
+
+image::http://hawt.io/images/hawtio_logo.svg[]
+
+This is a simple docker packaging of http://hawt.io/[hawtio console].
+
+Image expose port 8080 and application is run internaly as an "hawtio" user.
+
+== Build
+
+[source, bash]
+----
+include::build.sh[]
+----
+
+== Run
+
+You can customize runtime by using environment variables likes the following ones:
+
+----
+include::hawtio/Dockerfile[lines=9..12]
+----
+
+You can find more detail on configuration http://hawt.io/configuration/index.html[there ...]
+
+.Docker mode
+[source, bash]
+----
+include::run.sh[]
+----
